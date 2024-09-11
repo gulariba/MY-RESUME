@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume">
+        <!-- Personal Information -->
+        <section class="personal-info">
+            <h2 onclick="toggleSection('personal-details')">Personal Information</h2>
+            <div id="personal-details" class="details show">
+                <img src="https://img1.wsimg.com/isteam/ip/12da744c-e8b2-4903-9901-5c433e941511/resume%20girl.jpg" alt="Profile Picture" class="profile-picture">
+                <h3>Areeba Ahmed Khan</h3>
+                <p>Contact: gulariba713@example.com | +92 310 1208717</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="education">
+            <h2 onclick="toggleSection('education-details')">Education</h2>
+            <div id="education-details" class="details show">
+                <p><strong>Degree: Bachelor in Computer Science</strong> </p>
+                <p>University: karachi University, 2024</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <h2 onclick="toggleSection('skills-details')">Skills</h2>
+            <div id="skills-details" class="details show">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Front-End developer</li>
+                    <li>Python</li>
+                    <li>Next Js</li>
+                    <li>React JS</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="experience">
+            <h2 onclick="toggleSection('experience-details')">Work Experience</h2>
+            <div id="experience-details" class="details show">
+
+                <p><strong>Job Title:</strong>Front-End Developer</p>
+                <p><strong>Company:</strong> CodeAplpha, 2023 - 2024</p>
+                <p><strong>>Responsibilities:</strong> Developing responsive web applications.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
